@@ -1,116 +1,78 @@
-# books
-My Books
-# API Security in Action
+<div align="center">
+  <a href="https://github.com/FAQGURU">
+    <img src="./assets/readme.svg" alt="FAQGURU" />
+  </a>
+</div>
 
-This repository contains source code that accompanies the book
-*API Security in Action*, written by Neil Madden and published by
-Manning Publications in November 2020.
-Please see [Manning's website](https://www.manning.com/books/api-security-in-action?a_aid=api_security_in_action&a_bid=6806e3b6)
-for information on purchasing a copy, or its available from Amazon
-and other retailers.
+## What is this?
 
-**Note: there is no source code on the main branch.** You need to check
-out the branch for the chapter you are reading.
+A collection of super-popular Interview questions, along with answers, and some code-snippets that will help you to prepare for technical interviews. Many of these questions are real questions from real interviews. It is by no means comprehensive, and the answers are relatively short ( and for each of the concepts, there are probably better and/or more in depth coverage in the web), but this repo like reference tool, that helps you to prepare for technical interview.
 
-The git repo is organized with a separate branch for each chapter,
-starting with Chapter 2. Actually there are two branches
-per chapter. The branches called "chapter02", "chapter03" etc will
-give you the source code as needed for starting out on the given chapter.
-The branches named "chapter02-end", "chapter03-end" etc give the
-final source code after all the alterations in that chapter. Typically
-the source code at the end of a chapter is also identical to the start
-of the next chapter.
+Note: Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
 
-**I strongly recommend working through the code listings from the book.**
+## Table of Contents
 
-The source code can also be downloaded as a zip file from Manning's website.
+### Topics
 
-## Prerequisites
+1. [JavaScript](/topics/en/javascript.md)
+1. [React](/topics/en/react.md)
+1. [Redux](/topics/en/redux.md)
+1. [Vue.js](/topics/en/vuejs.md)
+1. [Angular](/topics/en/angular.md)
+1. [Node.js](/topics/en/nodejs.md)
+1. [AngularJS](/topics/en/angularjs.md)
+1. [Bootstrap](/topics/en/bootstrap.md)
+1. [CSS](/topics/en/css.md)
+1. [HTML5](/topics/en/html5.md)
+1. [Sass](/topics/en/sass.md)
+1. [Webpack](/topics/en/webpack.md)
+1. [MongoDB](/topics/en/mongodb.md)
+1. [SQL](/topics/en/sql.md)
+1. [GraphQL](/topics/en/graphql.md)
+1. [C#](/topics/en/c.md)
+1. [Golang](/topics/en/golang.md)
+1. [Java](/topics/en/java.md)
+1. [ASP.NET](/topics/en/asp.net.md)
+1. [ASP.NET MVC](/topics/en/asp.net-mvc.md)
+1. [.NET Framework](/topics/en/net-framework.md)
+1. [Ruby](/topics/en/ruby.md)
+1. [Ruby On Rails](/topics/en/ruby-on-rails.md)
+1. [TypeScript](/topics/en/typeScript.md)
+1. [AWS](/topics/en/aws.md)
+1. [Azure](/topics/en/azure.md)
+1. [Git](/topics/en/git.md)
+1. [Code Problems](/topics/en/code-problems.md)
+1. [Data Structures](/topics/en/data-structures.md)
+1. [Design Patterns](/topics/en/design-patterns.md)
+1. [Agile](/topics/en/agile.md)
+1. PHP
+1. Android
+1. Swift
+1. DevOps
+1. REST API
+1. Software Architecture
+1. Web Security
+1. Performance Testing
+1. UX Design
+1. Scrum
 
-The following are needed to run the code examples:
+## Translations
 
- - Java 11 or later. See https://adoptopenjdk.net for installers.
- - A recent version of [Apache Maven](https://maven.apache.org) - I use 3.6.1.
- - For testing, [curl](https://curl.haxx.se). On Mac OS X you should install
- a version of curl linked against OpenSSL rather than Secure Transport, otherwise
- you may need to adjust the examples in the book.
- - I highly recommend installing [mkcert](https://github.com/FiloSottile/mkcert)
- for working with SSL certificates from chapter 3 onwards.
+### Future
 
-The API server for each chapter can be started using the command
+- [ ] [中文版 (Chinese)](./topics/zh/readme.md)
+- [ ] [Русский (Russian)](./topics/ru/readme.md)
+- [ ] Español (Spanish)
 
-    mvn clean compile exec:java
+### Creating new Translations
 
-This will start the Spark/Jetty server running on port 4567. See chapter
-descriptions for HTTP requests that can be used.
+See [Creating new translations](CONTRIBUTING.md#Translations)
 
-Chapter 10 and onwards have more detailed requirements to run the sample code.
-Please consult the book for exact instructions.
+## Authors
 
-## Postman
+- **Yl Markov** - [GITHUB](https://github.com/uliaaan) / [TWITTER](https://twitter.com/ylmarkov)
+- **Dennis** - [GITHUB](https://github.com/denisschmidt)
 
-I've created a [Postman](https://www.postman.com) collection to help you perform operations using the API developed
-during the book as an alternative to curl. You can import the collection from this url:
-https://www.postman.com/collections/ef49c7f5cba0737ecdfd
+## License
 
-## Chapters
-
-### Chapter 2 - Secure API development
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter02)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter02-end)
-
-### Chapter 3 - Securing the Natter API
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter03)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter03-end)
-
-### Chapter 4 - Session cookie authentication
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter04)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter04-end)
-
-### Chapter 5 - Modern token-based authentication
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter05)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter05-end)
-
-### Chapter 6 - Self-contained tokens and JWTs
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter06)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter06-end)
-
-### Chapter 7 - OAuth 2 and OpenID Connect
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter07)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter07-end)
-
-### Chapter 8 - Identity-based access control
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter08)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter08-end)
-
-### Chapter 9 - Capability security and Macaroons
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter09)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter09-end)
-
-### Chapter 10 - Microservice APIs in Kubernetes
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter10)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter10-end)
-
-### Chapter 11 - Securing service to service APIs
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter11)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter11-end)
-
-### Chapter 12 - Securing IoT communications
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter12)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter12-end)
-
-### Chapter 13 - Securing IoT APIs
-
- - [Starting Point](https://github.com/NeilMadden/apisecurityinaction/tree/chapter13)
- - [Finished Code](https://github.com/NeilMadden/apisecurityinaction/tree/chapter13-end)
+All projects and packages in this repository are [MIT licensed](/LICENSE).
